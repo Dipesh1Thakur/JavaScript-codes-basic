@@ -1,0 +1,107 @@
+<h1>Welcome to Javascript Tutotial</h1>
+<script type="text/javascript">
+	alert(" Welcome to Javascript") // : is optional
+	document.write(" <h3>Welcome to Javascript tutorial. Here we learn about Javascript</h3>");
+	// Variables in javascript
+document.write("<br>")
+	// // var a;
+	var a="10";
+	var b="20";
+	// // var a=10.21;
+	// // var a="Dipesh Thakur";
+	// // document.write(a);
+	// var c=a+b;
+	// // var d=++a;
+	// // var e= a<b;
+	// // var e= a>b;
+	// // var d= a==b; // checks only value
+	// var d= a===b; // checks both value and datatype
+	// document.write("<br>")
+	// document.write(d)
+	// document.write("<br>")
+	// document.write(d)
+	// document.write("<br>")
+	// document.write(e)
+
+document.write("<h2>Conditions in Javascript</h2>")
+if (a<b) {
+	document.write("The above Conditions is correct");
+}else{
+	document.write("The above Conditions is not correct.");
+}
+
+		document.write("<br><h2>Switch Case</h2>");
+		var a=10;
+		var b= 30;
+		switch(a)
+		{
+			case a: document.write("This is 10 number.");
+			break;
+			case b: document.write("This is 30 number.");
+			break;
+		}
+
+		document.write("<br><h2>For Loop</h2>");
+		for(var i=1;i<5;i++)
+		{
+			document.write("Condition of for loop<br>")
+		}
+// document.write("<br><h2>While Loop</h2>");
+// var count=5;
+// while(count<10){
+// 	document.write("Welcome to javascript.<br>")
+// 	count++;
+// }
+// document.write("<br><h2>Do While Loop</h2>");
+// var count=5;
+// do{
+// 	document.write("Welcome to javascript.<br>")
+// 	count++;
+// 	}while(count<10);
+
+	document.write("<br><h2>Array</h2>");
+	var arrays =new Array("Dipesh","Thakur");
+	var array=["Dipesh","Thakur"];
+	document.write(arrays[1])
+	document.write("<br>"+array[0])
+	document.write("<br><h2>Function</h2>");
+	function sum(){
+		var a=5;
+		var b=4;
+		var c=a+b;
+		document.write(c);
+	}
+	sum();
+	// function sub(a,b) {
+	// 	var c=a-b;
+	// 	document.write("<br>"+c);
+	// }
+	// sub(15,10);
+</script>
+<form name="example"><h2>Calculator</h2>
+	<input type="text" size="20" name="calculator">
+	<input type="button" name="b1" value="Calculator" onclick="cal()">
+	<input type="reset" name="b2" value="Reset">
+	Answer: <input type="text" size="20" name="ans"><br><br><br>
+
+	<input type="button" value="click me"onclick="bootstrap()"><small>For next page</small>
+</form>
+<script type="text/javascript">
+	function cal()
+	{
+		document.example.ans.value=eval(document.example.calculator.value)
+	}
+
+</script>
+<script type="text/javascript">
+	function bootstrap() {
+		// confirm("You want to see website click ook button")
+		var ans =confirm("You want to see website click ook button");
+		if(ans)
+		{
+alert("Welcome to JavaScript website")
+			window.location="file:///E:/JavaScript/demo.html"
+		}else{document.write("Sorry! you click on cancel button")}
+	
+}
+</script>
